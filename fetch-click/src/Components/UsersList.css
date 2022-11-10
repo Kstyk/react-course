@@ -1,0 +1,8 @@
+.users {
+    text-align: center;
+    list-style-type: none;
+}
+
+.users li {
+    border-top: 2px solid gray;
+}

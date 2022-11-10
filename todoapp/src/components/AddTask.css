@@ -1,0 +1,15 @@
+input {
+    margin: 10px;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Calibri';
+}

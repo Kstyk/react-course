@@ -1,31 +1,25 @@
-class ShoppingList extends React.Component {
-    state = {
+const ShoppingList = () => {
+    const [items] = React.useState({
         items1: 'ogórki',
         items2: 'sok',
         items3: 'piwo'
-    }
-    
-    render() {
-        return (
-            <div>
-                <h1>Lista zakupów</h1>
-                <ul>
-                    <ItemList name={this.state.items1} example={2+69}/>
-                    <ItemList name={this.state.items2}/>
-                    <ItemList name={this.state.items3}/>
-                </ul>
-            </div>
-        )
-    }
+    })
+
+    return (
+        <div>
+            <h1>Lista zakupów</h1>
+            <ul>
+                <ItemList name={items.items1} example={2 + 69} />
+                <ItemList name={items.items2} />
+                <ItemList name={items.items3} />
+            </ul>
+        </div>
+    )
 }
 
-class ItemList extends React.Component
- {
-     render() {
-        return (
-            <li>{this.props.name}, {this.props.example}</li>
-        )
-     }
- }
+const ItemList = ({ name, example }) => (
+    <li>{name}, {example}</li>
+)
 
-ReactDOM.render(<ShoppingList/>, document.getElementById('root'))
+
+ReactDOM.render(<ShoppingList />, document.getElementById('root'))

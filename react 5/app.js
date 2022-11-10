@@ -28,12 +28,12 @@ class App extends React.Component {
     render() {
         return (
             <>
-                <input value={this.state.value} type="text" onChange={this.handleInputChange}/>
+                <input value={this.state.value} type="text" onChange={this.handleInputChange} />
                 <button onClick={this.handleClick}>Reset</button>
-                <Title value={this.state.value.toUpperCase()}/>
+                <Title value={this.state.value.toUpperCase()} />
             </>
-        )    
+        )
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
